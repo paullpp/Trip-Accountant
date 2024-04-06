@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C136EBDB2BC1CE2600A31C64 /* Trip_AccountantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBDA2BC1CE2600A31C64 /* Trip_AccountantApp.swift */; };
+		C136EBDD2BC1CE2600A31C64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBDC2BC1CE2600A31C64 /* ContentView.swift */; };
+		C136EBDF2BC1CE2600A31C64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C136EBDE2BC1CE2600A31C64 /* Assets.xcassets */; };
+		C136EBE22BC1CE2700A31C64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C136EBE12BC1CE2700A31C64 /* Preview Assets.xcassets */; };
+		C136EBEC2BC1CE2700A31C64 /* Trip_AccountantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBEB2BC1CE2700A31C64 /* Trip_AccountantTests.swift */; };
+		C136EBF62BC1CE2700A31C64 /* Trip_AccountantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBF52BC1CE2700A31C64 /* Trip_AccountantUITests.swift */; };
+		C136EBF82BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBF72BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C136EBE82BC1CE2700A31C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C136EBCF2BC1CE2600A31C64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C136EBD62BC1CE2600A31C64;
+			remoteInfo = "Trip Accountant";
+		};
+		C136EBF22BC1CE2700A31C64 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C136EBCF2BC1CE2600A31C64 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C136EBD62BC1CE2600A31C64;
+			remoteInfo = "Trip Accountant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C136EBD72BC1CE2600A31C64 /* Trip Accountant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trip Accountant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C136EBDA2BC1CE2600A31C64 /* Trip_AccountantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_AccountantApp.swift; sourceTree = "<group>"; };
+		C136EBDC2BC1CE2600A31C64 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C136EBDE2BC1CE2600A31C64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C136EBE12BC1CE2700A31C64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C136EBE72BC1CE2700A31C64 /* Trip AccountantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trip AccountantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C136EBEB2BC1CE2700A31C64 /* Trip_AccountantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_AccountantTests.swift; sourceTree = "<group>"; };
+		C136EBF12BC1CE2700A31C64 /* Trip AccountantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trip AccountantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C136EBF52BC1CE2700A31C64 /* Trip_AccountantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_AccountantUITests.swift; sourceTree = "<group>"; };
+		C136EBF72BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_AccountantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C136EBD42BC1CE2600A31C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C136EBE42BC1CE2700A31C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C136EBEE2BC1CE2700A31C64 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C136EBCE2BC1CE2600A31C64 = {
+			isa = PBXGroup;
+			children = (
+				C136EBD92BC1CE2600A31C64 /* Trip Accountant */,
+				C136EBEA2BC1CE2700A31C64 /* Trip AccountantTests */,
+				C136EBF42BC1CE2700A31C64 /* Trip AccountantUITests */,
+				C136EBD82BC1CE2600A31C64 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C136EBD82BC1CE2600A31C64 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C136EBD72BC1CE2600A31C64 /* Trip Accountant.app */,
+				C136EBE72BC1CE2700A31C64 /* Trip AccountantTests.xctest */,
+				C136EBF12BC1CE2700A31C64 /* Trip AccountantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C136EBD92BC1CE2600A31C64 /* Trip Accountant */ = {
+			isa = PBXGroup;
+			children = (
+				C136EBDA2BC1CE2600A31C64 /* Trip_AccountantApp.swift */,
+				C136EBDC2BC1CE2600A31C64 /* ContentView.swift */,
+				C136EBDE2BC1CE2600A31C64 /* Assets.xcassets */,
+				C136EBE02BC1CE2700A31C64 /* Preview Content */,
+			);
+			path = "Trip Accountant";
+			sourceTree = "<group>";
+		};
+		C136EBE02BC1CE2700A31C64 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C136EBE12BC1CE2700A31C64 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C136EBEA2BC1CE2700A31C64 /* Trip AccountantTests */ = {
+			isa = PBXGroup;
+			children = (
+				C136EBEB2BC1CE2700A31C64 /* Trip_AccountantTests.swift */,
+			);
+			path = "Trip AccountantTests";
+			sourceTree = "<group>";
+		};
+		C136EBF42BC1CE2700A31C64 /* Trip AccountantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C136EBF52BC1CE2700A31C64 /* Trip_AccountantUITests.swift */,
+				C136EBF72BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift */,
+			);
+			path = "Trip AccountantUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C136EBD62BC1CE2600A31C64 /* Trip Accountant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C136EBFB2BC1CE2700A31C64 /* Build configuration list for PBXNativeTarget "Trip Accountant" */;
+			buildPhases = (
+				C136EBD32BC1CE2600A31C64 /* Sources */,
+				C136EBD42BC1CE2600A31C64 /* Frameworks */,
+				C136EBD52BC1CE2600A31C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trip Accountant";
+			productName = "Trip Accountant";
+			productReference = C136EBD72BC1CE2600A31C64 /* Trip Accountant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C136EBE62BC1CE2700A31C64 /* Trip AccountantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C136EBFE2BC1CE2700A31C64 /* Build configuration list for PBXNativeTarget "Trip AccountantTests" */;
+			buildPhases = (
+				C136EBE32BC1CE2700A31C64 /* Sources */,
+				C136EBE42BC1CE2700A31C64 /* Frameworks */,
+				C136EBE52BC1CE2700A31C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C136EBE92BC1CE2700A31C64 /* PBXTargetDependency */,
+			);
+			name = "Trip AccountantTests";
+			productName = "Trip AccountantTests";
+			productReference = C136EBE72BC1CE2700A31C64 /* Trip AccountantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C136EBF02BC1CE2700A31C64 /* Trip AccountantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C136EC012BC1CE2700A31C64 /* Build configuration list for PBXNativeTarget "Trip AccountantUITests" */;
+			buildPhases = (
+				C136EBED2BC1CE2700A31C64 /* Sources */,
+				C136EBEE2BC1CE2700A31C64 /* Frameworks */,
+				C136EBEF2BC1CE2700A31C64 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C136EBF32BC1CE2700A31C64 /* PBXTargetDependency */,
+			);
+			name = "Trip AccountantUITests";
+			productName = "Trip AccountantUITests";
+			productReference = C136EBF12BC1CE2700A31C64 /* Trip AccountantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C136EBCF2BC1CE2600A31C64 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					C136EBD62BC1CE2600A31C64 = {
+						CreatedOnToolsVersion = 15.1;
+					};
+					C136EBE62BC1CE2700A31C64 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = C136EBD62BC1CE2600A31C64;
+					};
+					C136EBF02BC1CE2700A31C64 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = C136EBD62BC1CE2600A31C64;
+					};
+				};
+			};
+			buildConfigurationList = C136EBD22BC1CE2600A31C64 /* Build configuration list for PBXProject "Trip Accountant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C136EBCE2BC1CE2600A31C64;
+			productRefGroup = C136EBD82BC1CE2600A31C64 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C136EBD62BC1CE2600A31C64 /* Trip Accountant */,
+				C136EBE62BC1CE2700A31C64 /* Trip AccountantTests */,
+				C136EBF02BC1CE2700A31C64 /* Trip AccountantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C136EBD52BC1CE2600A31C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C136EBE22BC1CE2700A31C64 /* Preview Assets.xcassets in Resources */,
+				C136EBDF2BC1CE2600A31C64 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C136EBE52BC1CE2700A31C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C136EBEF2BC1CE2700A31C64 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C136EBD32BC1CE2600A31C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C136EBDD2BC1CE2600A31C64 /* ContentView.swift in Sources */,
+				C136EBDB2BC1CE2600A31C64 /* Trip_AccountantApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C136EBE32BC1CE2700A31C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C136EBEC2BC1CE2700A31C64 /* Trip_AccountantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C136EBED2BC1CE2700A31C64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C136EBF62BC1CE2700A31C64 /* Trip_AccountantUITests.swift in Sources */,
+				C136EBF82BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C136EBE92BC1CE2700A31C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C136EBD62BC1CE2600A31C64 /* Trip Accountant */;
+			targetProxy = C136EBE82BC1CE2700A31C64 /* PBXContainerItemProxy */;
+		};
+		C136EBF32BC1CE2700A31C64 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C136EBD62BC1CE2600A31C64 /* Trip Accountant */;
+			targetProxy = C136EBF22BC1CE2700A31C64 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C136EBF92BC1CE2700A31C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C136EBFA2BC1CE2700A31C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C136EBFC2BC1CE2700A31C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trip Accountant/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paullpp.Trip-Accountant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C136EBFD2BC1CE2700A31C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trip Accountant/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paullpp.Trip-Accountant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C136EBFF2BC1CE2700A31C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paullpp.Trip-AccountantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trip Accountant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trip Accountant";
+			};
+			name = Debug;
+		};
+		C136EC002BC1CE2700A31C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paullpp.Trip-AccountantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trip Accountant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Trip Accountant";
+			};
+			name = Release;
+		};
+		C136EC022BC1CE2700A31C64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paullpp.Trip-AccountantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Trip Accountant";
+			};
+			name = Debug;
+		};
+		C136EC032BC1CE2700A31C64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.paullpp.Trip-AccountantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Trip Accountant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C136EBD22BC1CE2600A31C64 /* Build configuration list for PBXProject "Trip Accountant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C136EBF92BC1CE2700A31C64 /* Debug */,
+				C136EBFA2BC1CE2700A31C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C136EBFB2BC1CE2700A31C64 /* Build configuration list for PBXNativeTarget "Trip Accountant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C136EBFC2BC1CE2700A31C64 /* Debug */,
+				C136EBFD2BC1CE2700A31C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C136EBFE2BC1CE2700A31C64 /* Build configuration list for PBXNativeTarget "Trip AccountantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C136EBFF2BC1CE2700A31C64 /* Debug */,
+				C136EC002BC1CE2700A31C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C136EC012BC1CE2700A31C64 /* Build configuration list for PBXNativeTarget "Trip AccountantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C136EC022BC1CE2700A31C64 /* Debug */,
+				C136EC032BC1CE2700A31C64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C136EBCF2BC1CE2600A31C64 /* Project object */;
+}
