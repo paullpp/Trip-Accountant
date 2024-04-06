@@ -14,6 +14,8 @@
 		C136EBEC2BC1CE2700A31C64 /* Trip_AccountantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBEB2BC1CE2700A31C64 /* Trip_AccountantTests.swift */; };
 		C136EBF62BC1CE2700A31C64 /* Trip_AccountantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBF52BC1CE2700A31C64 /* Trip_AccountantUITests.swift */; };
 		C136EBF82BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBF72BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift */; };
+		C136EC052BC1D26C00A31C64 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EC042BC1D26C00A31C64 /* Data.swift */; };
+		C136EC072BC1E29200A31C64 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EC062BC1E29200A31C64 /* TripView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		C136EBF12BC1CE2700A31C64 /* Trip AccountantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Trip AccountantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C136EBF52BC1CE2700A31C64 /* Trip_AccountantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_AccountantUITests.swift; sourceTree = "<group>"; };
 		C136EBF72BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_AccountantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C136EC042BC1D26C00A31C64 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C136EC062BC1E29200A31C64 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				C136EBDC2BC1CE2600A31C64 /* ContentView.swift */,
 				C136EBDE2BC1CE2600A31C64 /* Assets.xcassets */,
 				C136EBE02BC1CE2700A31C64 /* Preview Content */,
+				C136EC042BC1D26C00A31C64 /* Data.swift */,
+				C136EC062BC1E29200A31C64 /* TripView.swift */,
 			);
 			path = "Trip Accountant";
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C136EBDD2BC1CE2600A31C64 /* ContentView.swift in Sources */,
+				C136EC052BC1D26C00A31C64 /* Data.swift in Sources */,
 				C136EBDB2BC1CE2600A31C64 /* Trip_AccountantApp.swift in Sources */,
+				C136EC072BC1E29200A31C64 /* TripView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
