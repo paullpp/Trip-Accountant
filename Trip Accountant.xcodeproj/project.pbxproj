@@ -16,6 +16,7 @@
 		C136EBF82BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EBF72BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift */; };
 		C136EC052BC1D26C00A31C64 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EC042BC1D26C00A31C64 /* Data.swift */; };
 		C136EC072BC1E29200A31C64 /* TripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C136EC062BC1E29200A31C64 /* TripView.swift */; };
+		C1CE25052BC1FCB7003F1AB8 /* SplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CE25042BC1FCB7003F1AB8 /* SplitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C136EBF72BC1CE2700A31C64 /* Trip_AccountantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip_AccountantUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C136EC042BC1D26C00A31C64 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C136EC062BC1E29200A31C64 /* TripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripView.swift; sourceTree = "<group>"; };
+		C1CE25042BC1FCB7003F1AB8 /* SplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				C136EBE02BC1CE2700A31C64 /* Preview Content */,
 				C136EC042BC1D26C00A31C64 /* Data.swift */,
 				C136EC062BC1E29200A31C64 /* TripView.swift */,
+				C1CE25042BC1FCB7003F1AB8 /* SplitView.swift */,
 			);
 			path = "Trip Accountant";
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1CE25052BC1FCB7003F1AB8 /* SplitView.swift in Sources */,
 				C136EBDD2BC1CE2600A31C64 /* ContentView.swift in Sources */,
 				C136EC052BC1D26C00A31C64 /* Data.swift in Sources */,
 				C136EBDB2BC1CE2600A31C64 /* Trip_AccountantApp.swift in Sources */,

@@ -29,7 +29,7 @@ struct ContentView: View {
                         )
                         TextField("Enter a comment", text: $comment)
                         Button {
-                            let trip: Trip = Trip(members: guests.components(separatedBy: ","), destination: destination, date: date, comment: comment, total: 0, transactions: [])
+                            let trip: Trip = Trip(members: guests.components(separatedBy: ", "), destination: destination, date: date, comment: comment, total: 0, transactions: [])
                             trips.append(trip)
                             destination = ""
                             date = Date()
@@ -40,23 +40,21 @@ struct ContentView: View {
                         }
                     }
                 }
-                VStack {
-                    ForEach(trips.indices, id: \.self) { index in
-                        NavigationLink(destination: TripView(trip: $trips[index])) {
-                            VStack {
-                                HStack {
-                                    Text(trips[index].destination)
-                                    Text(" - ")
-                                    Text(trips[index].date, style: .date)
-                                    Button {
-                                        trips.remove(at: index)
-                                    } label: {
-                                        Text("🗑️")
+                
+                List {
+                    VStack {
+                        ForEach(trips.indices, id: \.self) { index in
+                            NavigationLink(destination: TripView(trip: $trips[index])) {
+                                VStack {
+                                    HStack {
+                                        Text(trips[index].destination)
+                                        Text(" - ")
+                                        Text(trips[index].date, style: .date)
                                     }
+                                    Text(trips[index].members.joined(separator: ", "))
+                                       .multilineTextAlignment(.trailing)
+                                    Divider()
                                 }
-                                Text(trips[index].members.joined(separator: ", "))
-                                   .multilineTextAlignment(.trailing)
-                                Divider()
                             }
                         }
                     }
