@@ -14,22 +14,30 @@ struct ContentView: View {
     @State private var comment: String = ""
     @State private var trips: [Trip] = []
     @State private var showAlert: Bool = false
+    @FocusState private var keyboardFocused: Bool
     
     var body: some View {
         NavigationView {
             VStack {
                 Text("Trip Accountant")
+                    .font(.system(size: 30))
+                    .font(.custom("AmericanTypewriter", size: 30))
+                    .fontWeight(.bold)
                 VStack {
                     Form {
                         TextField("Enter the destination", text: $destination)
+                            .focused($keyboardFocused)
                         TextField("Enter the list of guests", text: $guests)
+                            .focused($keyboardFocused)
                         DatePicker(
                             "Date of Trip",
                             selection: $date,
                             displayedComponents: [.date]
                         )
                         TextField("Enter a comment", text: $comment)
+                            .focused($keyboardFocused)
                         Button {
+                            keyboardFocused = false
                             if (destination == "" || guests == "") {
                                 showAlert = true
                             } else {
@@ -41,7 +49,7 @@ struct ContentView: View {
                                 comment = ""
                             }
                         } label: {
-                            Text("submit")
+                            Text("Create Trip")
                         }
                         .alert("Destination and Guests are required fields", isPresented: $showAlert) {
                             Button("Ok", role: .cancel) { }
@@ -53,8 +61,8 @@ struct ContentView: View {
                     VStack {
                         Text("Trips")
                             .padding(0)
-                            .font(.system(size: 32))
-                            .font(.custom("AmericanTypewriter", size: 32))
+                            .font(.system(size: 22))
+                            .font(.custom("AmericanTypewriter", size: 22))
                             .fontWeight(.bold)
                         List {
                             ForEach(trips.indices, id: \.self) { index in

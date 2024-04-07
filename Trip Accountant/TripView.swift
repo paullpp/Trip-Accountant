@@ -16,10 +16,15 @@ struct TripView: View {
     @Binding var trip: Trip
     let promptText: String = "select"
     @State private var showAlert: Bool = false
+    @FocusState private var keyboardFocused: Bool
     
     var body: some View {
         GeometryReader { geometry in
             VStack {
+                Text(trip.destination)
+                    .font(.system(size: 28))
+                    .font(.custom("AmericanTypewriter", size: 22))
+                    .fontWeight(.bold)
                 VStack {
                     Form {
                         Picker("Who paid?", selection: $buyer) {
@@ -31,13 +36,16 @@ struct TripView: View {
                             }
                         }
                         TextField("Location", text: $location)
+                            .focused($keyboardFocused)
                         DatePicker(
                             "Date of Transaction",
                             selection: $date,
                             displayedComponents: [.date]
                         )
                         TextField("Amount", text: $amount)
+                            .focused($keyboardFocused)
                         Button {
+                            keyboardFocused = false
                             if (buyer == "" || amount == "") {
                                 showAlert = true
                             } else {
@@ -50,41 +58,40 @@ struct TripView: View {
                                 location = ""
                             }
                         } label: {
-                            Text("submit")
+                            Text("Create Transaction")
                         }
                         .alert("Buyer and Amount are required fields", isPresented: $showAlert) {
                             Button("Ok", role: .cancel) { }
                         }
                     }
-                    VStack {
-                        Text("Total $\(trip.total, specifier: "%.2f")")
-                        Button {
-                            showPopOver = true
-                        } label: {
-                            Text("Calculate Splits")
-                        }
+                    .frame(height: 300)
+                }
+                VStack {
+                    Text("Total $\(trip.total, specifier: "%.2f")")
+                    Button {
+                        showPopOver = true
+                    } label: {
+                        Text("Calculate Splits")
                     }
                     .frame(width: geometry.size.width * 0.82)
-//                        .padding()
                     .cornerRadius(15)
-//                        .background(Color(UIColor.systemBackground))
-                }
-                .popover(isPresented: $showPopOver) {
-                    SplitView(showPopOver: $showPopOver, trip: $trip)
-                }
-                Spacer()
-                List {
-                    ForEach(trip.transactions.indices, id: \.self) { index in
-                        VStack {
-                            HStack {
-                                Text(trip.transactions[index].buyer)
-                                Text(" - ")
-                                Text(trip.transactions[index].date, style: .date)
-                            }
-                            HStack {
-                                Text("$\(trip.transactions[index].amount, specifier: "%.2f")")
-                                Text(" - ")
-                                Text(trip.transactions[index].location)
+                    .padding(2)
+                    .popover(isPresented: $showPopOver) {
+                        SplitView(showPopOver: $showPopOver, trip: $trip)
+                    }
+                    List {
+                        ForEach(trip.transactions.indices, id: \.self) { index in
+                            VStack {
+                                HStack {
+                                    Text(trip.transactions[index].buyer)
+                                    Text(" - ")
+                                    Text(trip.transactions[index].date, style: .date)
+                                }
+                                HStack {
+                                    Text("$\(trip.transactions[index].amount, specifier: "%.2f")")
+                                    Text(" - ")
+                                    Text(trip.transactions[index].location)
+                                }
                             }
                         }
                     }

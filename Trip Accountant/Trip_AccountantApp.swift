@@ -12,7 +12,6 @@ struct Trip_AccountantApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.font, Font.custom("Futura", size: 24))
         }
     }
 }
