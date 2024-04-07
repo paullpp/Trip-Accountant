@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var guests: String = ""
     @State private var comment: String = ""
     @State private var trips: [Trip] = []
+    @State private var showAlert: Bool = false
     
     var body: some View {
         NavigationView {
@@ -29,35 +30,51 @@ struct ContentView: View {
                         )
                         TextField("Enter a comment", text: $comment)
                         Button {
-                            let trip: Trip = Trip(members: guests.components(separatedBy: ", "), destination: destination, date: date, comment: comment, total: 0, transactions: [])
-                            trips.append(trip)
-                            destination = ""
-                            date = Date()
-                            guests = ""
-                            comment = ""
+                            if (destination == "" || guests == "") {
+                                showAlert = true
+                            } else {
+                                let trip: Trip = Trip(members: guests.components(separatedBy: ", "), destination: destination, date: date, comment: comment, total: 0, transactions: [])
+                                trips.append(trip)
+                                destination = ""
+                                date = Date()
+                                guests = ""
+                                comment = ""
+                            }
                         } label: {
                             Text("submit")
                         }
+                        .alert("Destination and Guests are required fields", isPresented: $showAlert) {
+                            Button("Ok", role: .cancel) { }
+                        }
                     }
+                    .frame(height: 300)
                 }
-                
-                List {
+                if (trips.count >= 1) {
                     VStack {
-                        ForEach(trips.indices, id: \.self) { index in
-                            NavigationLink(destination: TripView(trip: $trips[index])) {
-                                VStack {
-                                    HStack {
-                                        Text(trips[index].destination)
-                                        Text(" - ")
-                                        Text(trips[index].date, style: .date)
+                        Text("Trips")
+                            .padding(0)
+                            .font(.system(size: 32))
+                            .font(.custom("AmericanTypewriter", size: 32))
+                            .fontWeight(.bold)
+                        List {
+                            ForEach(trips.indices, id: \.self) { index in
+                                NavigationLink(destination: TripView(trip: $trips[index])) {
+                                    VStack {
+                                        HStack {
+                                            Text(trips[index].destination)
+                                            Text(" - ")
+                                            Text(trips[index].date, style: .date)
+                                        }
+                                        Text(trips[index].members.joined(separator: ", "))
+                                            .multilineTextAlignment(.trailing)
+                                        
                                     }
-                                    Text(trips[index].members.joined(separator: ", "))
-                                       .multilineTextAlignment(.trailing)
-                                    Divider()
                                 }
                             }
                         }
                     }
+                } else {
+                    Spacer()
                 }
             }
         }

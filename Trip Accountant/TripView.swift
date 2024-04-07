@@ -65,35 +65,31 @@ struct TripView: View {
                         }
                     }
                     .frame(width: geometry.size.width * 0.82)
-                    .padding()
-                    .background(.white)
+//                        .padding()
                     .cornerRadius(15)
+//                        .background(Color(UIColor.systemBackground))
                 }
                 .popover(isPresented: $showPopOver) {
                     SplitView(showPopOver: $showPopOver, trip: $trip)
                 }
                 Spacer()
                 List {
-                    VStack {
-                        ForEach(trip.transactions.indices, id: \.self) { index in
-                            VStack {
-                                HStack {
-                                    Text(trip.transactions[index].buyer)
-                                    Text(" - ")
-                                    Text(trip.transactions[index].date, style: .date)
-                                }
-                                HStack {
-                                    Text("$\(trip.transactions[index].amount, specifier: "%.2f")")
-                                    Text(" - ")
-                                    Text(trip.transactions[index].location)
-                                }
-                                Divider()
+                    ForEach(trip.transactions.indices, id: \.self) { index in
+                        VStack {
+                            HStack {
+                                Text(trip.transactions[index].buyer)
+                                Text(" - ")
+                                Text(trip.transactions[index].date, style: .date)
+                            }
+                            HStack {
+                                Text("$\(trip.transactions[index].amount, specifier: "%.2f")")
+                                Text(" - ")
+                                Text(trip.transactions[index].location)
                             }
                         }
                     }
                 }
             }
-            .background(Color(red: 242/255, green: 242/255, blue: 247/255))
         }
     }
 }
