@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Trip: Codable {
+struct Trip: Codable, Hashable {
     let members: [String]
     let destination: String
     let date: Date
@@ -35,7 +35,7 @@ struct Trip: Codable {
     }
 }
 
-struct Transaction: Codable {
+struct Transaction: Codable, Hashable {
     let buyer: String
     let amount: Float
     let location: String

@@ -92,12 +92,20 @@ struct ContentView: View {
                                             Text(" - ")
                                             Text(trips[index].date, style: .date)
                                         }
+                                        .frame(maxWidth: .infinity, alignment: .leading)
                                         Text(trips[index].members.joined(separator: ", "))
-                                            .multilineTextAlignment(.trailing)
-                                        
+                                            .multilineTextAlignment(.leading)
+                                            .padding([.top], 2)
+                                            .frame(maxWidth: .infinity, alignment: .leading)
                                     }
                                 }
                             }
+                            .onDelete(perform: { indexSet in
+                                trips.remove(atOffsets: indexSet)
+                                if let encoded = try? encoder.encode(trips){
+                                    userDefaults.set(encoded, forKey: "trips")
+                                }
+                            })
                         }
                     }
                 } else {

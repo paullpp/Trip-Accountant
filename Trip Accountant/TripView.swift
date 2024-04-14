@@ -59,7 +59,7 @@ struct TripView: View {
                                      }
                                 }
                                 let transaction: Transaction = Transaction(buyer: buyer, amount: (amount as NSString).floatValue, location: location, date: date)
-                                for (idx, element) in trips.enumerated() {
+                                for (idx, _) in trips.enumerated() {
                                     if (trips[idx] == trip) {
                                         trips[idx].transactions.append(transaction)
                                         trip.transactions.append(transaction)
