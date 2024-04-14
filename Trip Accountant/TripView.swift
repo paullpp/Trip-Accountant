@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TripView: View {
+    let userDefaults = UserDefaults.standard
+    let encoder = JSONEncoder()
+    let decoder = JSONDecoder()
     @State private var buyer: String = ""
     @State private var date: Date = Date()
     @State private var amount: String = ""
@@ -49,9 +52,26 @@ struct TripView: View {
                             if (buyer == "" || amount == "") {
                                 showAlert = true
                             } else {
+                                var trips: [Trip] = []
+                                if let objects = UserDefaults.standard.value(forKey: "trips") as? Data {
+                                    if let decoded = try? decoder.decode(Array.self, from: objects) as [Trip] {
+                                        trips = decoded
+                                     }
+                                }
                                 let transaction: Transaction = Transaction(buyer: buyer, amount: (amount as NSString).floatValue, location: location, date: date)
-                                trip.transactions.append(transaction)
-                                trip.total += (amount as NSString).floatValue
+                                for (idx, element) in trips.enumerated() {
+                                    if (trips[idx] == trip) {
+                                        trips[idx].transactions.append(transaction)
+                                        trip.transactions.append(transaction)
+                                        trips[idx].total += (amount as NSString).floatValue
+                                        trip.total += (amount as NSString).floatValue
+                                    }
+                                }
+                                
+                                
+                                if let encoded = try? encoder.encode(trips){
+                                    userDefaults.set(encoded, forKey: "trips")
+                                }
                                 buyer = ""
                                 date = Date()
                                 amount = ""

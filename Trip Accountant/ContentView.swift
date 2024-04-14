@@ -6,15 +6,31 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct ContentView: View {
+    let userDefaults = UserDefaults.standard
+    let encoder = JSONEncoder()
+    let decoder = JSONDecoder()
     @State private var destination: String = ""
     @State private var date: Date = Date()
     @State private var guests: String = ""
     @State private var comment: String = ""
-    @State private var trips: [Trip] = []
+    @State private var trips: [Trip]
     @State private var showAlert: Bool = false
     @FocusState private var keyboardFocused: Bool
+    
+    init() {
+        if let objects = UserDefaults.standard.value(forKey: "trips") as? Data {
+            if let decoded = try? decoder.decode(Array.self, from: objects) as [Trip] {
+                _trips = State(initialValue: decoded)
+             } else {
+                 _trips = State(initialValue: [])
+             }
+        } else {
+            _trips = State(initialValue: [])
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -43,6 +59,9 @@ struct ContentView: View {
                             } else {
                                 let trip: Trip = Trip(members: guests.components(separatedBy: ", "), destination: destination, date: date, comment: comment, total: 0, transactions: [])
                                 trips.append(trip)
+                                if let encoded = try? encoder.encode(trips){
+                                    userDefaults.set(encoded, forKey: "trips")
+                                }
                                 destination = ""
                                 date = Date()
                                 guests = ""
